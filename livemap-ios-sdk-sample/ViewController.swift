@@ -17,7 +17,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         wemap.delegate = self
         
-        _ = wemap.configure(config: wemapsdk_config(token: "YA94J9C4C2P1DZQSTRW7YIJVV", mapId: 12670)).presentIn(view: self.view)
+        //_ = wemap.configure(config: wemapsdk_config(token: "YA94J9C4C2P1DZQSTRW7YIJVV", mapId: 12670)).presentIn(view: self.view)
+        _ = wemap.configure(config: wemapsdk_config(token: "7ETI43N4ZZGARWPHJ57WQAARW", mapId: 13305)).presentIn(view: self.view)
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,7 +39,7 @@ extension ViewController: wemapsdkViewDelegate {
    
     @objc func waitForReady(_ wemapController: wemapsdk) {
         print("Livemap is Ready")
-        wemap.openPinpoint(WemapPinpointId:29550092)
+        wemap.openPinpoint(WemapPinpointId:31604315)
         // let location = WemapLocation(longitude: 3.6, latitude: 43.9)
         // self.wemap.navigateToPinpoint(WemapPinpointId:29550092, location: location, heading: 50)
         // self.wemap.openEvent(WemapEventId:2816693)
