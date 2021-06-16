@@ -39,7 +39,7 @@ extension ViewController: wemapsdkViewDelegate {
    
     @objc func waitForReady(_ wemapController: wemapsdk) {
         print("Livemap is Ready")
-        wemap.openPinpoint(WemapPinpointId:31604315)
+        // wemap.openPinpoint(WemapPinpointId:31604315)
         // let location = WemapLocation(longitude: 3.6, latitude: 43.9)
         // self.wemap.navigateToPinpoint(WemapPinpointId:29550092, location: location, heading: 50)
         // self.wemap.openEvent(WemapEventId:2816693)
