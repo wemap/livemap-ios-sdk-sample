@@ -36,6 +36,10 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Location is required to use main functions. We will not distribute or store this information.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Microphone is required to use Augmented Reality.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Camera is required to use Augmented Reality.</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
