@@ -17,13 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         wemap.delegate = self
         
-        //_ = wemap.configure(config: wemapsdk_config(token: "YA94J9C4C2P1DZQSTRW7YIJVV", mapId: 12670)).presentIn(view: self.view)
-        _ = wemap.configure(config: wemapsdk_config(token: "7ETI43N4ZZGARWPHJ57WQAARW", mapId: 13305)).presentIn(view: self.view)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        _ = wemap.configure(config: wemapsdk_config(token: "GUHTU6TYAWWQHUSR5Z5JZNMXX", mapId: 19158)).presentIn(view: self.view)
     }
     
     override func viewWillLayoutSubviews() {
