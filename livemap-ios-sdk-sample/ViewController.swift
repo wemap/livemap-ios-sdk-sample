@@ -35,6 +35,8 @@ class ViewController: UIViewController {
 
 }
 
+// clicking pinpoints show log noise that is not problematic, as said by Apple
+// https://developer.apple.com/forums/thread/691361
 extension ViewController: wemapsdkViewDelegate {
    
     @objc func waitForReady(_ wemapController: wemapsdk) {
