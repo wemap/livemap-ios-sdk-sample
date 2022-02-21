@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         //            southWest: Coordinates(latitude: 52.522667, longitude: 13.364878))
         let box: BoundingBox? = nil
         _ = wemap.configure(config: wemapsdk_config(
-            token: "",
+            token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
             mapId: 19158,
             maxbounds: box
         )).presentIn(view: self.view)
