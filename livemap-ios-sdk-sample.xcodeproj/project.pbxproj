@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		06BDC4362400197800527F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4342400197800527F0F /* Main.storyboard */; };
 		06BDC4382400197B00527F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4372400197B00527F0F /* Assets.xcassets */; };
 		06BDC43B2400197B00527F0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4392400197B00527F0F /* LaunchScreen.storyboard */; };
+		229BF00B27ABD95300458977 /* livemap_ios_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229BF00A27ABD95300458977 /* livemap_ios_sdk.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		06BDC4372400197B00527F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06BDC43A2400197B00527F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06BDC43C2400197B00527F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229BF00A27ABD95300458977 /* livemap_ios_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = livemap_ios_sdk.xcframework; path = "../livemap-ios-sdk/xcframework/livemap_ios_sdk.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				229BF00B27ABD95300458977 /* livemap_ios_sdk.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				06BDC42F2400197800527F0F /* livemap-ios-sdk-sample */,
 				06BDC42E2400197800527F0F /* Products */,
+				229BF00927ABD95200458977 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				06BDC43C2400197B00527F0F /* Info.plist */,
 			);
 			path = "livemap-ios-sdk-sample";
+			sourceTree = "<group>";
+		};
+		229BF00927ABD95200458977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				229BF00A27ABD95300458977 /* livemap_ios_sdk.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +321,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.getwemap.livemap-ios-sdk-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -17,7 +17,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         wemap.delegate = self
         
-        _ = wemap.configure(config: wemapsdk_config(token: "GUHTU6TYAWWQHUSR5Z5JZNMXX", mapId: 19158)).presentIn(view: self.view)
+        //_ = wemap.configure(config: wemapsdk_config(token: "GUHTU6TYAWWQHUSR5Z5JZNMXX", mapId: 19158)).presentIn(view: self.view)
+
+        // Test with boundaries using the parameter maxBounds
+        //let box = BoundingBox(northEast: Coordinates(latitude: 52.526714, longitude: 13.37477),
+        //            southWest: Coordinates(latitude: 52.522667, longitude: 13.364878))
+        let box: BoundingBox? = nil
+        _ = wemap.configure(config: wemapsdk_config(
+            token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
+            mapId: 19158,
+            maxbounds: box
+        )).presentIn(view: self.view)
     }
     
     override func viewWillLayoutSubviews() {
@@ -29,12 +39,14 @@ class ViewController: UIViewController {
 
 }
 
+
 // clicking pinpoints show log noise that is not problematic, as said by Apple
 // https://developer.apple.com/forums/thread/691361
 extension ViewController: wemapsdkViewDelegate {
    
     @objc func waitForReady(_ wemapController: wemapsdk) {
         print("Livemap is Ready")
+        // self.wemap.setSourceLists(sourceLists: [74878]) // added over Paris
         // wemap.openPinpoint(WemapPinpointId:31604315)
         // let location = WemapLocation(longitude: 3.6, latitude: 43.9)
         // self.wemap.navigateToPinpoint(WemapPinpointId:29550092, location: location, heading: 50)
@@ -90,4 +102,17 @@ extension ViewController: wemapsdkViewDelegate {
     @objc func onGoToPinpointClicked(_ wemapController: wemapsdk, pinpoint: WemapPinpoint) {
         print("Go To Pinpoint Clicked: \(pinpoint.id)")
     }
+
+    @objc func onMapMoved(_ wemapController: wemapsdk, json: NSDictionary) {
+        print("Map Moved \(json)")
+    }
+    
+    @objc func onMapClick(_ wemapController: wemapsdk, json: NSDictionary) {
+        print("Map Click: \(json)")
+    }
+    
+    @objc func onMapLongClick(_ wemapController: wemapsdk, json: NSDictionary) {
+        print("Map Long Click: \(json)")
+    }
 }
+
