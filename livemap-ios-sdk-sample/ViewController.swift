@@ -46,6 +46,7 @@ extension ViewController: wemapsdkViewDelegate {
    
     @objc func waitForReady(_ wemapController: wemapsdk) {
         print("Livemap is Ready")
+        // self.wemap.aroundMe()
         // self.wemap.setSourceLists(sourceLists: [74878]) // added over Paris
         // wemap.openPinpoint(WemapPinpointId:31604315)
         // let location = WemapLocation(longitude: 3.6, latitude: 43.9)
