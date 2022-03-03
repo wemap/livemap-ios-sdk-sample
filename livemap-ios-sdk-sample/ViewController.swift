@@ -11,34 +11,50 @@ import livemap_ios_sdk
 
 class ViewController: UIViewController {
     let wemap = wemapsdk.sharedInstance
+    var onMapReadyCallback: () -> Void = {}
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         wemap.delegate = self
         
-        //_ = wemap.configure(config: wemapsdk_config(token: "GUHTU6TYAWWQHUSR5Z5JZNMXX", mapId: 19158)).presentIn(view: self.view)
+        _ = wemap.configure(config: wemapsdk_config(token: "GUHTU6TYAWWQHUSR5Z5JZNMXX", mapId: 19158)).presentIn(view: self.view)
 
+        //test_bounding_box()
+        //test_introcard_and_disable_analytics()
+    }
+
+    func test_bounding_box() {
         // Test with boundaries using the parameter maxBounds
-        //let box = BoundingBox(northEast: Coordinates(latitude: 52.526714, longitude: 13.37477),
-        //            southWest: Coordinates(latitude: 52.522667, longitude: 13.364878))
-        let box: BoundingBox? = nil
+        let box = BoundingBox(northEast: Coordinates(latitude: 52.526714, longitude: 13.37477),
+                    southWest: Coordinates(latitude: 52.522667, longitude: 13.364878))
+        // let box: BoundingBox? = nil
         _ = wemap.configure(config: wemapsdk_config(
             token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
             mapId: 19158,
             maxbounds: box
         )).presentIn(view: self.view)
     }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        
-        wemap.frame = self.view.bounds
+
+    func test_introcard_and_disable_analytics() {
+        _ = wemap.configure(config: wemapsdk_config(
+            token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
+            mapId: 19158,
+            introcard: IntroCardParameter(active: true)
+            //urlParameters: ["introcard={\"active\":true}"]
+        )).presentIn(view: self.view)
+
+        onMapReadyCallback = {
+            //self.wemap.enableAnalytics()
+            self.wemap.disableAnalytics()
+        }
     }
 
-
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        wemap.frame = self.view.bounds
+    }
 }
-
 
 // clicking pinpoints show log noise that is not problematic, as said by Apple
 // https://developer.apple.com/forums/thread/691361
@@ -62,7 +78,7 @@ extension ViewController: wemapsdkViewDelegate {
          )
          */
         // self.wemap.setFilters(WemapFilters: filter)
-        
+
         /*
          Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { (timer) in
          // self.wemap.closePinpoint()
@@ -70,6 +86,8 @@ extension ViewController: wemapsdkViewDelegate {
          self.wemap.stopNavigation()
          }
          */
+
+         onMapReadyCallback()
     }
     
     @objc func onEventOpen(_ wemapController: wemapsdk, event: WemapEvent) {
