@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             maxbounds: box
         )).presentIn(view: self.view)
     }
-
+/*
     func test_introcard_and_disable_analytics() {
         _ = wemap.configure(config: wemapsdk_config(
             token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
             //self.wemap.enableAnalytics()
             self.wemap.disableAnalytics()
         }
-    }
+    }*/
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -113,13 +113,17 @@ extension ViewController: wemapsdkViewDelegate {
     @objc func onGuidingStopped(_ wemapController: wemapsdk) {
         print("Guiding Stopped")
     }
-    
+
     @objc func onBookEventClicked(_ wemapController: wemapsdk, event: WemapEvent) {
         print("Book Event Clicked: \(event.id)")
     }
-    
+
     @objc func onGoToPinpointClicked(_ wemapController: wemapsdk, pinpoint: WemapPinpoint) {
         print("Go To Pinpoint Clicked: \(pinpoint.id)")
+    }
+
+    @objc func onLikePinpointClicked(_ wemapController: wemapsdk, pinpoint: WemapPinpoint) {
+        print("Like Pinpoint Clicked: \(pinpoint.id)")
     }
 
     @objc func onMapMoved(_ wemapController: wemapsdk, json: NSDictionary) {
