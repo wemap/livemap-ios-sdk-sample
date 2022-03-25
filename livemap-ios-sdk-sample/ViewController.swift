@@ -12,12 +12,12 @@ import livemap_ios_sdk
 class ViewController: UIViewController {
     let wemap = wemapsdk.sharedInstance
     var onMapReadyCallback: () -> Void = {}
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         wemap.delegate = self
-        
+
         _ = wemap.configure(config: wemapsdk_config(token: "GUHTU6TYAWWQHUSR5Z5JZNMXX", mapId: 19158)).presentIn(view: self.view)
 
         //test_bounding_box()
@@ -40,13 +40,12 @@ class ViewController: UIViewController {
         _ = wemap.configure(config: wemapsdk_config(
             token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
             mapId: 19158,
-            introcard: IntroCardParameter(active: true)
-            //urlParameters: ["introcard={\"active\":true}"]
+            introcardActive: true
         )).presentIn(view: self.view)
 
         onMapReadyCallback = {
-            //self.wemap.enableAnalytics()
             self.wemap.disableAnalytics()
+            self.wemap.enableAnalytics()
         }
     }
 
@@ -59,7 +58,7 @@ class ViewController: UIViewController {
 // clicking pinpoints show log noise that is not problematic, as said by Apple
 // https://developer.apple.com/forums/thread/691361
 extension ViewController: wemapsdkViewDelegate {
-   
+
     @objc func waitForReady(_ wemapController: wemapsdk) {
         print("Livemap is Ready")
         // self.wemap.aroundMe()
