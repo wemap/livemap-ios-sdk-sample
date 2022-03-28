@@ -102,6 +102,14 @@ extension ViewController: wemapsdkViewDelegate {
     @objc func onGoToPinpointClicked(_ wemapController: wemapsdk, pinpoint: WemapPinpoint) {
         print("Go To Pinpoint Clicked: \(pinpoint.id)")
     }
+    
+    @objc func onActionButtonClick(_ wemapController: wemapsdk, event: WemapEvent, actionType: String) {
+        print("Action \(actionType) clicked on event: \(event.id)")
+    }
+    
+    @objc func onActionButtonClick(_ wemapController: wemapsdk, pinpoint: WemapPinpoint, actionType: String) {
+        print("Action \(actionType) clicked on pinpoint: \(pinpoint.id)")
+    }
 
     @objc func onMapMoved(_ wemapController: wemapsdk, json: NSDictionary) {
         print("Map Moved \(json)")
