@@ -11,6 +11,7 @@ import livemap_ios_sdk
 
 class ViewController: UIViewController {
     let wemap = wemapsdk.sharedInstance
+    var currentPolylineId: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +36,21 @@ class ViewController: UIViewController {
         
         wemap.frame = self.view.bounds
     }
-
-
 }
 
 
 // clicking pinpoints show log noise that is not problematic, as said by Apple
 // https://developer.apple.com/forums/thread/691361
 extension ViewController: wemapsdkViewDelegate {
+    
+    private func printClassAttributes(_ classInstance: Any) {
+        let mirror = Mirror(reflecting: classInstance)
+        let properties = mirror.children
+        
+        for property in properties {
+            print("_ \(property.label!) = \(property.value)")
+        }
+    }
    
     @objc func waitForReady(_ wemapController: wemapsdk) {
         print("Livemap is Ready")
@@ -69,6 +77,17 @@ extension ViewController: wemapsdkViewDelegate {
          self.wemap.stopNavigation()
          }
          */
+        
+        //
+        let c1 = Coordinates(latitude: 43.618214, longitude: 3.834515, altitude: 0)
+        let c2 = Coordinates(latitude: 45.618214, longitude: 3.834515, altitude: 0)
+        self.wemap.drawPolyline(coordinatesList: [c1, c2])
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
+            self.wemap.removePolyline(id: self.currentPolylineId!)
+            print("Polyline removed: \(String(describing: self.currentPolylineId))")
+            self.currentPolylineId = nil
+        }
     }
     
     @objc func onEventOpen(_ wemapController: wemapsdk, event: WemapEvent) {
@@ -111,16 +130,34 @@ extension ViewController: wemapsdkViewDelegate {
         print("Action \(actionType) clicked on pinpoint: \(pinpoint.id)")
     }
 
-    @objc func onMapMoved(_ wemapController: wemapsdk, json: NSDictionary) {
-        print("Map Moved \(json)")
+    @objc func onMapMoved(_ wemapController: wemapsdk, mapMoved: MapMoved) {
+        print("Map Moved:")
+        printClassAttributes(mapMoved)
     }
     
-    @objc func onMapClick(_ wemapController: wemapsdk, json: NSDictionary) {
-        print("Map Click: \(json)")
+    @objc func onMapClick(_ wemapController: wemapsdk, coordinates: Coordinates) {
+        print("Map Click:")
+        printClassAttributes(coordinates)
     }
     
-    @objc func onMapLongClick(_ wemapController: wemapsdk, json: NSDictionary) {
-        print("Map Long Click: \(json)")
+    @objc func onMapLongClick(_ wemapController: wemapsdk, coordinates: Coordinates) {
+        print("Map Long Click:")
+        printClassAttributes(coordinates)
+    }
+    
+    @objc func onContentUpdated(_ wemapController: wemapsdk, events: [WemapEvent], contentUpdatedQuery: ContentUpdatedQuery) {
+        print("Content Updated (WemapEvent):")
+        printClassAttributes(contentUpdatedQuery)
+    }
+    
+    @objc func onContentUpdated(_ wemapController: wemapsdk, pinpoints: [WemapPinpoint], contentUpdatedQuery: ContentUpdatedQuery) {
+        print("Content Updated (WemapPinpoint):")
+        printClassAttributes(contentUpdatedQuery)
+    }
+    
+    @objc func onPolylineDrawn(_ wemapController: wemapsdk, id: String) {
+        print("Polyline Drawn: \(id)")
+        self.currentPolylineId = id
     }
 }
 
