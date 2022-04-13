@@ -54,40 +54,57 @@ extension ViewController: wemapsdkViewDelegate {
    
     @objc func waitForReady(_ wemapController: wemapsdk) {
         print("Livemap is Ready")
-        // self.wemap.setSourceLists(sourceLists: [74878]) // added over Paris
-        // wemap.openPinpoint(WemapPinpointId:31604315)
-        // let location = WemapLocation(longitude: 3.6, latitude: 43.9)
-        // self.wemap.navigateToPinpoint(WemapPinpointId:29550092, location: location, heading: 50)
-        // self.wemap.openEvent(WemapEventId:2816693)
         
-        /*
-         let filter = WemapFilters(
-         tags: ["jardin-remarquable"],
-         query: "Aragon",
-         startDate: "2019-09-21",
-         endDate: "2019-09-21"
-         )
-         */
-        // self.wemap.setFilters(WemapFilters: filter)
+//        // SET PINPOINTS
+//        self.wemap.setSourceLists(sourceLists: [74878]) // added over Paris
         
-        /*
-         Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { (timer) in
-         // self.wemap.closePinpoint()
-         // self.wemap.closeEvent()
-         self.wemap.stopNavigation()
-         }
-         */
+//        // OPEN PINPOINT
+//        wemap.openPinpoint(WemapPinpointId: 31604315)
         
-        //
-        let c1 = Coordinates(latitude: 43.618214, longitude: 3.834515, altitude: 0)
-        let c2 = Coordinates(latitude: 45.618214, longitude: 3.834515, altitude: 0)
-        self.wemap.drawPolyline(coordinatesList: [c1, c2])
+//         // NAVIGATE TO PINPOINT
+//         let location = WemapLocation(longitude: 3.6, latitude: 43.9)
+//         self.wemap.navigateToPinpoint(WemapPinpointId:29550092, location: location, heading: 50)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
-            self.wemap.removePolyline(id: self.currentPolylineId!)
-            print("Polyline removed: \(String(describing: self.currentPolylineId))")
-            self.currentPolylineId = nil
-        }
+//        // OPEN EVENT
+//        self.wemap.openEvent(WemapEventId:2816693)
+        
+//        // SET FILTERS
+//         let filter = WemapFilters(
+//             tags: ["jardin-remarquable"],
+//             query: "Aragon",
+//             startDate: "2019-09-21",
+//             endDate: "2019-09-21"
+//         )
+//        self.wemap.setFilters(WemapFilters: filter)
+        
+//         Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { (timer) in
+//             self.wemap.closePinpoint()
+//             self.wemap.closeEvent()
+//             self.wemap.stopNavigation()
+//         }
+         
+//        // DRAW POLYLINE
+//        if #available(iOS 14.0, *) {
+//            let c1 = Coordinates(latitude: 43.618214, longitude: 3.834515, altitude: 0)
+//            let c2 = Coordinates(latitude: 45.618214, longitude: 3.834515, altitude: 0)
+//
+//            self.wemap.drawPolyline(coordinatesList: [c1, c2], completion: { id in print("drawPolyline id is: \(id)") })
+//
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
+//                self.wemap.removePolyline(id: self.currentPolylineId!)
+//                print("Polyline removed: \(String(describing: self.currentPolylineId))")
+//                self.currentPolylineId = nil
+//            }
+//        }
+        
+//        // CENTER TO
+//        self.wemap.centerTo(center: Coordinates(latitude: 43.618214, longitude: 3.834515, altitude: 0), zoom: 20)
+        
+//        // ENABLE ANALYTICS
+//        self.wemap.enableAnalytics()
+        
+//        // DISABLE ANALYTICS
+//        self.wemap.disableAnalytics()
     }
     
     @objc func onEventOpen(_ wemapController: wemapsdk, event: WemapEvent) {
