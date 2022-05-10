@@ -12,8 +12,23 @@
 		06BDC4362400197800527F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4342400197800527F0F /* Main.storyboard */; };
 		06BDC4382400197B00527F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4372400197B00527F0F /* Assets.xcassets */; };
 		06BDC43B2400197B00527F0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4392400197B00527F0F /* LaunchScreen.storyboard */; };
-		229BF00B27ABD95300458977 /* livemap_ios_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229BF00A27ABD95300458977 /* livemap_ios_sdk.xcframework */; };
+		B950FACC282A5D040058A670 /* livemap_ios_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D8B3028291005007C0176 /* livemap_ios_sdk.xcframework */; };
+		B950FACD282A5D040058A670 /* livemap_ios_sdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B98D8B3028291005007C0176 /* livemap_ios_sdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B950FACE282A5D040058A670 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B950FACD282A5D040058A670 /* livemap_ios_sdk.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06BDC42D2400197800527F0F /* livemap-ios-sdk-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "livemap-ios-sdk-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,7 +38,7 @@
 		06BDC4372400197B00527F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06BDC43A2400197B00527F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06BDC43C2400197B00527F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		229BF00A27ABD95300458977 /* livemap_ios_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = livemap_ios_sdk.xcframework; path = "../livemap-ios-sdk/xcframework/livemap_ios_sdk.xcframework"; sourceTree = "<group>"; };
+		B98D8B3028291005007C0176 /* livemap_ios_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = livemap_ios_sdk.xcframework; path = "../livemap-ios-sdk/xcframework/livemap_ios_sdk.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229BF00B27ABD95300458977 /* livemap_ios_sdk.xcframework in Frameworks */,
+				B950FACC282A5D040058A670 /* livemap_ios_sdk.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +86,7 @@
 		229BF00927ABD95200458977 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				229BF00A27ABD95300458977 /* livemap_ios_sdk.xcframework */,
+				B98D8B3028291005007C0176 /* livemap_ios_sdk.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,6 +101,7 @@
 				06BDC4292400197800527F0F /* Sources */,
 				06BDC42A2400197800527F0F /* Frameworks */,
 				06BDC42B2400197800527F0F /* Resources */,
+				B950FACE282A5D040058A670 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
