@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,8 @@
 		06BDC4362400197800527F0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4342400197800527F0F /* Main.storyboard */; };
 		06BDC4382400197B00527F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4372400197B00527F0F /* Assets.xcassets */; };
 		06BDC43B2400197B00527F0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4392400197B00527F0F /* LaunchScreen.storyboard */; };
-		B950FACC282A5D040058A670 /* livemap_ios_sdk.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98D8B3028291005007C0176 /* livemap_ios_sdk.xcframework */; };
-		B950FACD282A5D040058A670 /* livemap_ios_sdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B98D8B3028291005007C0176 /* livemap_ios_sdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2AAC3E0AED677BB09247ACDC /* Pods_livemap_ios_sdk_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78864860A1A69811D43CD2D5 /* Pods_livemap_ios_sdk_sample.framework */; };
+		B945F9862833F0F300F2BEAD /* nao.kml in Resources */ = {isa = PBXBuildFile; fileRef = B945F9852833F0F300F2BEAD /* nao.kml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B950FACD282A5D040058A670 /* livemap_ios_sdk.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,7 +37,10 @@
 		06BDC4372400197B00527F0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06BDC43A2400197B00527F0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06BDC43C2400197B00527F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B98D8B3028291005007C0176 /* livemap_ios_sdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = livemap_ios_sdk.xcframework; path = "../livemap-ios-sdk/xcframework/livemap_ios_sdk.xcframework"; sourceTree = "<group>"; };
+		78864860A1A69811D43CD2D5 /* Pods_livemap_ios_sdk_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_livemap_ios_sdk_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8126A5CB842231D4BE9FF75B /* Pods-livemap-ios-sdk-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-livemap-ios-sdk-sample.debug.xcconfig"; path = "Target Support Files/Pods-livemap-ios-sdk-sample/Pods-livemap-ios-sdk-sample.debug.xcconfig"; sourceTree = "<group>"; };
+		B945F9852833F0F300F2BEAD /* nao.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nao.kml; sourceTree = "<group>"; };
+		E7367BEEF9F68E4E07790540 /* Pods-livemap-ios-sdk-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-livemap-ios-sdk-sample.release.xcconfig"; path = "Target Support Files/Pods-livemap-ios-sdk-sample/Pods-livemap-ios-sdk-sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B950FACC282A5D040058A670 /* livemap_ios_sdk.xcframework in Frameworks */,
+				2AAC3E0AED677BB09247ACDC /* Pods_livemap_ios_sdk_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +58,11 @@
 		06BDC4242400197800527F0F = {
 			isa = PBXGroup;
 			children = (
+				B945F9852833F0F300F2BEAD /* nao.kml */,
 				06BDC42F2400197800527F0F /* livemap-ios-sdk-sample */,
 				06BDC42E2400197800527F0F /* Products */,
 				229BF00927ABD95200458977 /* Frameworks */,
+				500D08529FEC3B4832DCF877 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +90,18 @@
 		229BF00927ABD95200458977 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B98D8B3028291005007C0176 /* livemap_ios_sdk.xcframework */,
+				78864860A1A69811D43CD2D5 /* Pods_livemap_ios_sdk_sample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		500D08529FEC3B4832DCF877 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8126A5CB842231D4BE9FF75B /* Pods-livemap-ios-sdk-sample.debug.xcconfig */,
+				E7367BEEF9F68E4E07790540 /* Pods-livemap-ios-sdk-sample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,10 +111,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06BDC43F2400197B00527F0F /* Build configuration list for PBXNativeTarget "livemap-ios-sdk-sample" */;
 			buildPhases = (
+				4AF41052EC959D10E3CF87BA /* [CP] Check Pods Manifest.lock */,
 				06BDC4292400197800527F0F /* Sources */,
 				06BDC42A2400197800527F0F /* Frameworks */,
 				06BDC42B2400197800527F0F /* Resources */,
 				B950FACE282A5D040058A670 /* Embed Frameworks */,
+				2731F91755E7FF81C63889AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,10 +168,53 @@
 				06BDC43B2400197B00527F0F /* LaunchScreen.storyboard in Resources */,
 				06BDC4382400197B00527F0F /* Assets.xcassets in Resources */,
 				06BDC4362400197800527F0F /* Main.storyboard in Resources */,
+				B945F9862833F0F300F2BEAD /* nao.kml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2731F91755E7FF81C63889AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-livemap-ios-sdk-sample/Pods-livemap-ios-sdk-sample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-livemap-ios-sdk-sample/Pods-livemap-ios-sdk-sample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-livemap-ios-sdk-sample/Pods-livemap-ios-sdk-sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AF41052EC959D10E3CF87BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-livemap-ios-sdk-sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06BDC4292400197800527F0F /* Sources */ = {
@@ -308,6 +366,7 @@
 		};
 		06BDC4402400197B00527F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8126A5CB842231D4BE9FF75B /* Pods-livemap-ios-sdk-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,6 +385,7 @@
 		};
 		06BDC4412400197B00527F0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7367BEEF9F68E4E07790540 /* Pods-livemap-ios-sdk-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

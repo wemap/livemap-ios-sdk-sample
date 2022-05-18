@@ -25,9 +25,11 @@ class ViewController: UIViewController {
         //            southWest: Coordinates(latitude: 52.522667, longitude: 13.364878))
         let box: BoundingBox? = nil
         _ = wemap.configure(config: wemapsdk_config(
-            token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
-            mapId: 19158,
-            maxbounds: box
+            token: nil,
+            mapId: 19388,
+            livemapRootUrl: "https://livemapdev.maaap.it",
+            maxbounds: box,
+            introcard: IntroCardParameter(active: false)
         )).presentIn(view: self.view)
     }
     
