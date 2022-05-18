@@ -29,7 +29,8 @@ class ViewController: UIViewController {
             mapId: 19388,
             livemapRootUrl: "https://livemapdev.maaap.it",
             maxbounds: box,
-            introcard: IntroCardParameter(active: false)
+            introcard: IntroCardParameter(active: false),
+            enablePolestar: true
         )).presentIn(view: self.view)
     }
     
