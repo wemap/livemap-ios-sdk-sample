@@ -13,7 +13,7 @@
 		06BDC4382400197B00527F0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4372400197B00527F0F /* Assets.xcassets */; };
 		06BDC43B2400197B00527F0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06BDC4392400197B00527F0F /* LaunchScreen.storyboard */; };
 		2AAC3E0AED677BB09247ACDC /* Pods_livemap_ios_sdk_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78864860A1A69811D43CD2D5 /* Pods_livemap_ios_sdk_sample.framework */; };
-		B945F9862833F0F300F2BEAD /* nao.kml in Resources */ = {isa = PBXBuildFile; fileRef = B945F9852833F0F300F2BEAD /* nao.kml */; };
+		B945F98C2835226900F2BEAD /* nao.kml in Resources */ = {isa = PBXBuildFile; fileRef = B945F98B2835226900F2BEAD /* nao.kml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,7 +39,7 @@
 		06BDC43C2400197B00527F0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78864860A1A69811D43CD2D5 /* Pods_livemap_ios_sdk_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_livemap_ios_sdk_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8126A5CB842231D4BE9FF75B /* Pods-livemap-ios-sdk-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-livemap-ios-sdk-sample.debug.xcconfig"; path = "Target Support Files/Pods-livemap-ios-sdk-sample/Pods-livemap-ios-sdk-sample.debug.xcconfig"; sourceTree = "<group>"; };
-		B945F9852833F0F300F2BEAD /* nao.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nao.kml; sourceTree = "<group>"; };
+		B945F98B2835226900F2BEAD /* nao.kml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = nao.kml; sourceTree = "<group>"; };
 		E7367BEEF9F68E4E07790540 /* Pods-livemap-ios-sdk-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-livemap-ios-sdk-sample.release.xcconfig"; path = "Target Support Files/Pods-livemap-ios-sdk-sample/Pods-livemap-ios-sdk-sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 		06BDC4242400197800527F0F = {
 			isa = PBXGroup;
 			children = (
-				B945F9852833F0F300F2BEAD /* nao.kml */,
+				B945F98B2835226900F2BEAD /* nao.kml */,
 				06BDC42F2400197800527F0F /* livemap-ios-sdk-sample */,
 				06BDC42E2400197800527F0F /* Products */,
 				229BF00927ABD95200458977 /* Frameworks */,
@@ -168,7 +168,7 @@
 				06BDC43B2400197B00527F0F /* LaunchScreen.storyboard in Resources */,
 				06BDC4382400197B00527F0F /* Assets.xcassets in Resources */,
 				06BDC4362400197800527F0F /* Main.storyboard in Resources */,
-				B945F9862833F0F300F2BEAD /* nao.kml in Resources */,
+				B945F98C2835226900F2BEAD /* nao.kml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
