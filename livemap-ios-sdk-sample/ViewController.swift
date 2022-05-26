@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let box: BoundingBox? = nil
         _ = wemap.configure(config: wemapsdk_config(
             token: nil,
-            mapId: 19388,
+            mapId: 19387,
             livemapRootUrl: "https://livemapdev.maaap.it",
             maxbounds: box,
             introcard: IntroCardParameter(active: false),
