@@ -1,5 +1,5 @@
 PODS:
-  - livemap-ios-sdk (0.0.1):
+  - livemap-ios-sdk (2.0.0):
     - NAOSDK
   - NAOSDK (4.11.7)
 
@@ -17,11 +17,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   livemap-ios-sdk:
-    :commit: e242e342260f9f5d1c6ba3bb55156bc87c452dcd
+    :commit: 79192345ca53e3d5ac6854d24f676a373db1014f
     :git: "git@github.com:wemap/livemap-ios-sdk.git"
 
 SPEC CHECKSUMS:
-  livemap-ios-sdk: 41add44d40227b534b9fb58c99cba9d684b680cc
+  livemap-ios-sdk: 434eed4f3b2af64a313089f99c394442604ff571
   NAOSDK: df009f164d494e9246ca2e8e5539699d05b8b048
 
 PODFILE CHECKSUM: 7e9c424b58feff3e06817652a8fbb2a457f55d2b
