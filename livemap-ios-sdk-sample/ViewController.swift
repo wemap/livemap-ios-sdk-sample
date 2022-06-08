@@ -72,7 +72,7 @@ extension ViewController: wemapsdkViewDelegate {
 //        self.wemap.openEvent(WemapEventId:2816693)
         
 //        // SET FILTERS
-//         let filter = WemapFilters(
+//        let filter = WemapFilters(
 //             tags: ["jardin-remarquable"],
 //             query: "Aragon",
 //             startDate: "2019-09-21",
@@ -108,6 +108,22 @@ extension ViewController: wemapsdkViewDelegate {
         
 //        // DISABLE ANALYTICS
 //        self.wemap.disableAnalytics()
+        
+//        // POSITIONING SYSTEM METHODS
+//        if #available(iOS 14.0, *) {
+//            self.wemap.disablePositioningSystem() {
+//                self.wemap.setUserLocation(userLocation: Coordinates(latitude: 48.86, longitude: 2.34)) {
+//                    self.wemap.getUserLocation() { coordinate in
+//                        print(coordinate)
+//                    }
+//                }
+//                self.wemap.setDeviceAttitude(attitude: Attitude(quaternion: [1, 0, 0, 0])) {
+//                    self.wemap.getDeviceAttitude() { attitude in
+//                        print(attitude)
+//                    }
+//                }
+//            }
+//        }
     }
     
     @objc func onEventOpen(_ wemapController: wemapsdk, event: WemapEvent) {
