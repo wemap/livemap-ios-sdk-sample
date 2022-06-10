@@ -18,19 +18,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         wemap.delegate = self
         
-        //_ = wemap.configure(config: wemapsdk_config(token: "GUHTU6TYAWWQHUSR5Z5JZNMXX", mapId: 19158)).presentIn(view: self.view)
-
-        // Test with boundaries using the parameter maxBounds
-        //let box = BoundingBox(northEast: Coordinates(latitude: 52.526714, longitude: 13.37477),
-        //            southWest: Coordinates(latitude: 52.522667, longitude: 13.364878))
-        let box: BoundingBox? = nil
         _ = wemap.configure(config: wemapsdk_config(
-            token: nil,
-            mapId: 19387,
-            livemapRootUrl: "https://livemapdev.maaap.it",
-            maxbounds: box,
-            introcard: IntroCardParameter(active: false),
-            enablePolestar: true
+            token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
+            mapId: 19158
         )).presentIn(view: self.view)
     }
     
