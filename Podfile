@@ -6,6 +6,6 @@ target 'livemap-ios-sdk-sample' do
   use_frameworks!
 
   # Pods for livemap-ios-sdk-sample
-  pod 'livemap-ios-sdk', :git => 'git@github.com:wemap/livemap-ios-sdk.git', :branch => 'develop'
+  pod 'livemap-ios-sdk', :git => 'git@github.com:wemap/livemap-ios-sdk.git', :branch => 'master'
 
 end
