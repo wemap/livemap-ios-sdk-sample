@@ -114,6 +114,25 @@ extension ViewController: wemapsdkViewDelegate {
 //                }
 //            }
 //        }
+
+//        // ADD / REMOVE A MARKER
+//        if #available(iOS 14.0, *) {
+//            print("Add a marker")
+//
+//            self.wemap.addMarker(
+//                marker: Marker(
+//                    coordinates: Coordinates(latitude: 48.86, longitude: 2.34),
+//                    img: "https://api.getwemap.com/images/pps-categories/icon_circle_maaap.png",
+//                    label: "Marker label"
+//                )
+//            ) { id in
+//                DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
+//                    self.wemap.removeMarker(id: id)
+//                    print("Marker removed: \(String(describing: id))")
+//                }
+//            }
+//        }
+
     }
     
     @objc func onEventOpen(_ wemapController: wemapsdk, event: WemapEvent) {
