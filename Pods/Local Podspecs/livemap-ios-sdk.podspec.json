@@ -1,0 +1,29 @@
+{
+  "name": "livemap-ios-sdk",
+  "version": "2.5.0",
+  "summary": "The Wemap IOS SDK.",
+  "description": "The Wemap IOS SDK is a library that will handle communication with the Wemap application.",
+  "homepage": "https://github.com/wemap/livemap-ios-sdk",
+  "license": "MIT",
+  "authors": {
+    "Thibault Capelli": "thibault.capelli@getwemap.com"
+  },
+  "source": {
+    "git": "https://github.com/wemap/livemap-ios-sdk.git",
+    "tag": "2.5.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "static_framework": true,
+  "source_files": [
+    "livemap-ios-sdk/**/*.{swift}",
+    "CustomARView.{swift}"
+  ],
+  "resources": [
+    "**/*.{xib, png, jpeg, jpg}"
+  ],
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(PODS_CONFIGURATION_BUILD_DIR)/NAOSwiftProvider"
+  }
+}

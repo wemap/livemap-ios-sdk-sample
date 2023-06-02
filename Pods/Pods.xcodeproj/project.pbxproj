@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14C09E42F213C9DAD83F5C3F90F5EFF9 /* Pods-iOSSampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64515604AB3F146850F80459F2A2C97D /* Pods-iOSSampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AFD6CFC1B64B54B7991313644D58B23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		445CC118CE79AFA8A9D2B5BB45CC1BF3 /* Livemap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E58F11AC37AEB277A6ECDFD6D6539 /* Livemap.swift */; };
+		536D4D80210F4B112E2C9E372DCFD84F /* NativeProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ECFD4FC1AEFCE29C3AECE25F5F0CF2 /* NativeProviders.swift */; };
+		5CA9A5E79E9397A3D7B85B40292BC3FE /* livemap-ios-sdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75CBAB8CA1A9BBDF71D67D8A160F01E /* livemap-ios-sdk-dummy.m */; };
+		5D81997573A2CC2DCE666210A3F0894C /* NavigatorGeolocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B7FA5F431F9D3A3B700F45B973F081 /* NavigatorGeolocation.swift */; };
+		5FD8ECA0C6F61A34DA25541D0A86C673 /* CustomARView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2285834AF9AA4655F6B61503A359925B /* CustomARView.xib */; };
+		74D42CEF61C3E2D5EB8BC80031FD69C9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69216AB6D7EABC0BC04AB38C85A0B690 /* CameraView.swift */; };
+		7F323553BD9987683843EB3FFFD12B7C /* PolestarLocationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD6100EC39CB6F9918AF9802F0EA844 /* PolestarLocationProxy.swift */; };
+		8AAF04509093539947D2EEB89DDFA085 /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F697475D2B4271826D07ED459749ED3C /* CustomARView.swift */; };
+		A23ADC066EEA45F40DA9464A9E888159 /* JSONStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450E23CDD02A011EB8251A651810A486 /* JSONStructs.swift */; };
+		B1457F474F9645ED515DE079C69BC21D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62522C797682234D5D2B686DD88350 /* String.swift */; };
+		CA9924FA457C406AAE683230B036B7B9 /* WemapSDKActionsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7610A7478BF00A0FCA2A09EF31F207 /* WemapSDKActionsDelegate.swift */; };
+		CB87C31905743FD54D3876D12DBA9B82 /* livemap-ios-sdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6959430F47312D20550861E57A708CFB /* livemap-ios-sdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D53B4A2DBD9C183EE4B46F171AB3A3D8 /* Pods-iOSSampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D769A8A4160F8665CF0764D14BBF5A /* Pods-iOSSampleApp-dummy.m */; };
+		D84D77E016D8B1345403AE3CCDAA29A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DD3400112B2EB30118C6DABD37143D5F /* StructExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84C6574E28C3227F720859206F0FFED /* StructExtensions.swift */; };
+		E91BA74D10233A4F405073B726AFA970 /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B82B5C99A95BC5BEDC072498D9AC50 /* enums.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8104B2C3F2529BF81D6639BCFB1AB6C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92121DB1B8A3B2319EDE8C69B7CF0DF4;
+			remoteInfo = "livemap-ios-sdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E7610A7478BF00A0FCA2A09EF31F207 /* WemapSDKActionsDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WemapSDKActionsDelegate.swift; path = "livemap-ios-sdk/WemapSDKActionsDelegate.swift"; sourceTree = "<group>"; };
+		2285834AF9AA4655F6B61503A359925B /* CustomARView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = CustomARView.xib; sourceTree = "<group>"; };
+		28ECFD4FC1AEFCE29C3AECE25F5F0CF2 /* NativeProviders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeProviders.swift; path = "livemap-ios-sdk/providers/NativeProviders.swift"; sourceTree = "<group>"; };
+		2BD6100EC39CB6F9918AF9802F0EA844 /* PolestarLocationProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PolestarLocationProxy.swift; path = "livemap-ios-sdk/providers/PolestarLocationProxy.swift"; sourceTree = "<group>"; };
+		2C34B4525CE4743D4F6AC8B97D91B36D /* livemap-ios-sdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "livemap-ios-sdk.modulemap"; sourceTree = "<group>"; };
+		2C9853A22F9A7599E5BF1D12C11C8090 /* Pods-iOSSampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSSampleApp-Info.plist"; sourceTree = "<group>"; };
+		2CB5997139A581EEB329F2C807542573 /* Pods-iOSSampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSSampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EC0499DBA94CE4AF9B7AE0D55888A01 /* livemap-ios-sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "livemap-ios-sdk.release.xcconfig"; sourceTree = "<group>"; };
+		34B82B5C99A95BC5BEDC072498D9AC50 /* enums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = enums.swift; path = "livemap-ios-sdk/model/enums.swift"; sourceTree = "<group>"; };
+		3E1B1DB95B1ACE0431706627B65CB1C2 /* Pods-iOSSampleApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSSampleApp-resources.sh"; sourceTree = "<group>"; };
+		3E62522C797682234D5D2B686DD88350 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = "livemap-ios-sdk/extensions/String.swift"; sourceTree = "<group>"; };
+		450E23CDD02A011EB8251A651810A486 /* JSONStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONStructs.swift; path = "livemap-ios-sdk/model/JSONStructs.swift"; sourceTree = "<group>"; };
+		54B7FA5F431F9D3A3B700F45B973F081 /* NavigatorGeolocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigatorGeolocation.swift; path = "livemap-ios-sdk/utils/NavigatorGeolocation.swift"; sourceTree = "<group>"; };
+		5BABBAD01F6B7976D047AE5DB4FB4852 /* Pods-iOSSampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSSampleApp.modulemap"; sourceTree = "<group>"; };
+		5D9D81F861F3481DE95E5FFC1A54A423 /* Pods-iOSSampleApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-iOSSampleApp"; path = Pods_iOSSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64515604AB3F146850F80459F2A2C97D /* Pods-iOSSampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSSampleApp-umbrella.h"; sourceTree = "<group>"; };
+		65D469A3F4681159E2CEB9C236C124B7 /* livemap-ios-sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "livemap-ios-sdk.debug.xcconfig"; sourceTree = "<group>"; };
+		69216AB6D7EABC0BC04AB38C85A0B690 /* CameraView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = "livemap-ios-sdk/utils/CameraView.swift"; sourceTree = "<group>"; };
+		6959430F47312D20550861E57A708CFB /* livemap-ios-sdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "livemap-ios-sdk-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		81EA822FA6D427C3A17733521B05405B /* livemap-ios-sdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "livemap-ios-sdk-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4D769A8A4160F8665CF0764D14BBF5A /* Pods-iOSSampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSSampleApp-dummy.m"; sourceTree = "<group>"; };
+		A75CBAB8CA1A9BBDF71D67D8A160F01E /* livemap-ios-sdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "livemap-ios-sdk-dummy.m"; sourceTree = "<group>"; };
+		A7EB1B943C59D651B568287E6E9C0298 /* Pods-iOSSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		A90E58F11AC37AEB277A6ECDFD6D6539 /* Livemap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Livemap.swift; path = "livemap-ios-sdk/Livemap.swift"; sourceTree = "<group>"; };
+		D760912B7790289CD5E2CC43F5CEE383 /* livemap-ios-sdk */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "livemap-ios-sdk"; path = livemap_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D84C6574E28C3227F720859206F0FFED /* StructExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StructExtensions.swift; path = "livemap-ios-sdk/model/StructExtensions.swift"; sourceTree = "<group>"; };
+		E768C13309C29DE701F639B6B72E6531 /* livemap-ios-sdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "livemap-ios-sdk-Info.plist"; sourceTree = "<group>"; };
+		F38F7597DFFB45481BF072876FC277E2 /* Pods-iOSSampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSSampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		F697475D2B4271826D07ED459749ED3C /* CustomARView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		F73CA4BC0E4C7CE4FCED38CAFB58CA76 /* Pods-iOSSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EFA2D006911053DEF3E5DB8F405AE6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFD6CFC1B64B54B7991313644D58B23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B89F85C63BBB26ED64C43109DEC5EC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D84D77E016D8B1345403AE3CCDAA29A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14ECFEB9D2169F820A762330194903D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26D8BF0EB0617AB02C4CFBF5796F1119 /* livemap-ios-sdk */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		26D8BF0EB0617AB02C4CFBF5796F1119 /* livemap-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				69216AB6D7EABC0BC04AB38C85A0B690 /* CameraView.swift */,
+				F697475D2B4271826D07ED459749ED3C /* CustomARView.swift */,
+				34B82B5C99A95BC5BEDC072498D9AC50 /* enums.swift */,
+				450E23CDD02A011EB8251A651810A486 /* JSONStructs.swift */,
+				A90E58F11AC37AEB277A6ECDFD6D6539 /* Livemap.swift */,
+				28ECFD4FC1AEFCE29C3AECE25F5F0CF2 /* NativeProviders.swift */,
+				54B7FA5F431F9D3A3B700F45B973F081 /* NavigatorGeolocation.swift */,
+				2BD6100EC39CB6F9918AF9802F0EA844 /* PolestarLocationProxy.swift */,
+				3E62522C797682234D5D2B686DD88350 /* String.swift */,
+				D84C6574E28C3227F720859206F0FFED /* StructExtensions.swift */,
+				0E7610A7478BF00A0FCA2A09EF31F207 /* WemapSDKActionsDelegate.swift */,
+				80F1F4FADCF0FAC69317AA913087A690 /* Resources */,
+				D9AA1CD8306DC331B10164629B23FB9F /* Support Files */,
+			);
+			name = "livemap-ios-sdk";
+			path = "livemap-ios-sdk";
+			sourceTree = "<group>";
+		};
+		413661813A67EC2F7346E4F717390D48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D760912B7790289CD5E2CC43F5CEE383 /* livemap-ios-sdk */,
+				5D9D81F861F3481DE95E5FFC1A54A423 /* Pods-iOSSampleApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54FCE85B1459967C9F8C0D74D81A6DC3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4CB3D17BDC25605A497E992D7C5BCB2 /* Pods-iOSSampleApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		80F1F4FADCF0FAC69317AA913087A690 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2285834AF9AA4655F6B61503A359925B /* CustomARView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C4CB3D17BDC25605A497E992D7C5BCB2 /* Pods-iOSSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				5BABBAD01F6B7976D047AE5DB4FB4852 /* Pods-iOSSampleApp.modulemap */,
+				2CB5997139A581EEB329F2C807542573 /* Pods-iOSSampleApp-acknowledgements.markdown */,
+				F38F7597DFFB45481BF072876FC277E2 /* Pods-iOSSampleApp-acknowledgements.plist */,
+				A4D769A8A4160F8665CF0764D14BBF5A /* Pods-iOSSampleApp-dummy.m */,
+				2C9853A22F9A7599E5BF1D12C11C8090 /* Pods-iOSSampleApp-Info.plist */,
+				3E1B1DB95B1ACE0431706627B65CB1C2 /* Pods-iOSSampleApp-resources.sh */,
+				64515604AB3F146850F80459F2A2C97D /* Pods-iOSSampleApp-umbrella.h */,
+				F73CA4BC0E4C7CE4FCED38CAFB58CA76 /* Pods-iOSSampleApp.debug.xcconfig */,
+				A7EB1B943C59D651B568287E6E9C0298 /* Pods-iOSSampleApp.release.xcconfig */,
+			);
+			name = "Pods-iOSSampleApp";
+			path = "Target Support Files/Pods-iOSSampleApp";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				14ECFEB9D2169F820A762330194903D9 /* Pods */,
+				413661813A67EC2F7346E4F717390D48 /* Products */,
+				54FCE85B1459967C9F8C0D74D81A6DC3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9AA1CD8306DC331B10164629B23FB9F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C34B4525CE4743D4F6AC8B97D91B36D /* livemap-ios-sdk.modulemap */,
+				A75CBAB8CA1A9BBDF71D67D8A160F01E /* livemap-ios-sdk-dummy.m */,
+				E768C13309C29DE701F639B6B72E6531 /* livemap-ios-sdk-Info.plist */,
+				81EA822FA6D427C3A17733521B05405B /* livemap-ios-sdk-prefix.pch */,
+				6959430F47312D20550861E57A708CFB /* livemap-ios-sdk-umbrella.h */,
+				65D469A3F4681159E2CEB9C236C124B7 /* livemap-ios-sdk.debug.xcconfig */,
+				2EC0499DBA94CE4AF9B7AE0D55888A01 /* livemap-ios-sdk.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/livemap-ios-sdk";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		73FFB05D23ED49CBAFB8135C19E9BADC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C09E42F213C9DAD83F5C3F90F5EFF9 /* Pods-iOSSampleApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2486288A96269884E1810874C89113F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB87C31905743FD54D3876D12DBA9B82 /* livemap-ios-sdk-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5AED3D9E1FD4B3B08C0AD8885F017EDE /* Pods-iOSSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 538C42B3F48590D9BF3B9459B5C8B55F /* Build configuration list for PBXNativeTarget "Pods-iOSSampleApp" */;
+			buildPhases = (
+				73FFB05D23ED49CBAFB8135C19E9BADC /* Headers */,
+				082354BEECB4B13450483A170296AD1B /* Sources */,
+				5EFA2D006911053DEF3E5DB8F405AE6E /* Frameworks */,
+				350D8C40F6A1166895DA4D681ACA24B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1B0472C3B966B7B7D8EC1ADBF72D37C /* PBXTargetDependency */,
+			);
+			name = "Pods-iOSSampleApp";
+			productName = Pods_iOSSampleApp;
+			productReference = 5D9D81F861F3481DE95E5FFC1A54A423 /* Pods-iOSSampleApp */;
+			productType = "com.apple.product-type.framework";
+		};
+		92121DB1B8A3B2319EDE8C69B7CF0DF4 /* livemap-ios-sdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72752C1682E9ED3294E1437AE8A9A071 /* Build configuration list for PBXNativeTarget "livemap-ios-sdk" */;
+			buildPhases = (
+				F2486288A96269884E1810874C89113F /* Headers */,
+				B0D39C648E24FA97BD2364A240932062 /* Sources */,
+				B89F85C63BBB26ED64C43109DEC5EC7C /* Frameworks */,
+				B981939E68AAA0BBE4A21E57FC022255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "livemap-ios-sdk";
+			productName = livemap_ios_sdk;
+			productReference = D760912B7790289CD5E2CC43F5CEE383 /* livemap-ios-sdk */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 413661813A67EC2F7346E4F717390D48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92121DB1B8A3B2319EDE8C69B7CF0DF4 /* livemap-ios-sdk */,
+				5AED3D9E1FD4B3B08C0AD8885F017EDE /* Pods-iOSSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		350D8C40F6A1166895DA4D681ACA24B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B981939E68AAA0BBE4A21E57FC022255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FD8ECA0C6F61A34DA25541D0A86C673 /* CustomARView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		082354BEECB4B13450483A170296AD1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53B4A2DBD9C183EE4B46F171AB3A3D8 /* Pods-iOSSampleApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0D39C648E24FA97BD2364A240932062 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D42CEF61C3E2D5EB8BC80031FD69C9 /* CameraView.swift in Sources */,
+				8AAF04509093539947D2EEB89DDFA085 /* CustomARView.swift in Sources */,
+				E91BA74D10233A4F405073B726AFA970 /* enums.swift in Sources */,
+				A23ADC066EEA45F40DA9464A9E888159 /* JSONStructs.swift in Sources */,
+				445CC118CE79AFA8A9D2B5BB45CC1BF3 /* Livemap.swift in Sources */,
+				5CA9A5E79E9397A3D7B85B40292BC3FE /* livemap-ios-sdk-dummy.m in Sources */,
+				536D4D80210F4B112E2C9E372DCFD84F /* NativeProviders.swift in Sources */,
+				5D81997573A2CC2DCE666210A3F0894C /* NavigatorGeolocation.swift in Sources */,
+				7F323553BD9987683843EB3FFFD12B7C /* PolestarLocationProxy.swift in Sources */,
+				B1457F474F9645ED515DE079C69BC21D /* String.swift in Sources */,
+				DD3400112B2EB30118C6DABD37143D5F /* StructExtensions.swift in Sources */,
+				CA9924FA457C406AAE683230B036B7B9 /* WemapSDKActionsDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1B0472C3B966B7B7D8EC1ADBF72D37C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "livemap-ios-sdk";
+			target = 92121DB1B8A3B2319EDE8C69B7CF0DF4 /* livemap-ios-sdk */;
+			targetProxy = 8104B2C3F2529BF81D6639BCFB1AB6C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17B242D391BCAC16B2DE79B76C8A5C36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D469A3F4681159E2CEB9C236C124B7 /* livemap-ios-sdk.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/livemap-ios-sdk/livemap-ios-sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/livemap-ios-sdk/livemap-ios-sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/livemap-ios-sdk/livemap-ios-sdk.modulemap";
+				PRODUCT_MODULE_NAME = livemap_ios_sdk;
+				PRODUCT_NAME = livemap_ios_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E8B6EF02CD0F91480B509CF0DDFEAAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EC0499DBA94CE4AF9B7AE0D55888A01 /* livemap-ios-sdk.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/livemap-ios-sdk/livemap-ios-sdk-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/livemap-ios-sdk/livemap-ios-sdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/livemap-ios-sdk/livemap-ios-sdk.modulemap";
+				PRODUCT_MODULE_NAME = livemap_ios_sdk;
+				PRODUCT_NAME = livemap_ios_sdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DABCE20A26B21FA9946D0129ACD71C29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7EB1B943C59D651B568287E6E9C0298 /* Pods-iOSSampleApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSSampleApp/Pods-iOSSampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSSampleApp/Pods-iOSSampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F6E702C0A04DBF777DBD31C988CEC0C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73CA4BC0E4C7CE4FCED38CAFB58CA76 /* Pods-iOSSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSSampleApp/Pods-iOSSampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSSampleApp/Pods-iOSSampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		538C42B3F48590D9BF3B9459B5C8B55F /* Build configuration list for PBXNativeTarget "Pods-iOSSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E702C0A04DBF777DBD31C988CEC0C4 /* Debug */,
+				DABCE20A26B21FA9946D0129ACD71C29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72752C1682E9ED3294E1437AE8A9A071 /* Build configuration list for PBXNativeTarget "livemap-ios-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17B242D391BCAC16B2DE79B76C8A5C36 /* Debug */,
+				6E8B6EF02CD0F91480B509CF0DDFEAAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

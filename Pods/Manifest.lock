@@ -1,0 +1,22 @@
+PODS:
+  - livemap-ios-sdk (2.5.0)
+
+DEPENDENCIES:
+  - "livemap-ios-sdk (from `git@github.com:wemap/livemap-ios-sdk.git`, branch `master`)"
+
+EXTERNAL SOURCES:
+  livemap-ios-sdk:
+    :branch: master
+    :git: "git@github.com:wemap/livemap-ios-sdk.git"
+
+CHECKOUT OPTIONS:
+  livemap-ios-sdk:
+    :commit: eba743eba38e0dcd45115f5eb240942bb591d051
+    :git: "git@github.com:wemap/livemap-ios-sdk.git"
+
+SPEC CHECKSUMS:
+  livemap-ios-sdk: a236ebb9abb618a54292ab8c3e4ed0d149de2a16
+
+PODFILE CHECKSUM: e756e305eb532541c03729439430bfb23d5e2a93
+
+COCOAPODS: 1.12.1
