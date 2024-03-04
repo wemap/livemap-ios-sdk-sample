@@ -19,8 +19,8 @@ class ViewController: UIViewController {
         wemap.delegate = self
         
         _ = wemap.configure(config: wemapsdk_config(
-            token: "GUHTU6TYAWWQHUSR5Z5JZNMXX",
-            mapId: 19158
+            token: "",
+            mapId: 22211//23354//22211//25405//23254//21453//25405
         )).presentIn(view: self.view)
     }
     
@@ -47,6 +47,20 @@ extension ViewController: wemapsdkViewDelegate {
    
     @objc func waitForReady(_ wemapController: wemapsdk) {
         print("Livemap is Ready")
+        if #available(iOS 14.0, *) {
+            wemapController.getUserLocation { coord in
+                //            let pinpoint = WemapPinpoint()
+                print("user location is ==> lat: \(coord.latitude) , lng: \(coord.longitude)")
+                wemapController.setPinpoints(WemapPinpoints: [WemapPinpoint(["id": 10987,
+                                                                             "latitude": coord.latitude - 0.0001,
+                                                                             "longitude": coord.longitude - 0.0001,
+                                                                             "name": "bibus pin",
+                                                                             "description": "bibus test pin",
+                                                                            ])])
+            }
+        } else {
+            // Fallback on earlier versions
+        }
         
 //        // SET PINPOINTS
 //        self.wemap.setSourceLists(sourceLists: [74878]) // added over Paris
@@ -141,6 +155,7 @@ extension ViewController: wemapsdkViewDelegate {
     
     @objc func onPinpointOpen(_ wemapController: wemapsdk, pinpoint: WemapPinpoint) {
         print("Pinpoint opened: \(pinpoint.id)")
+        wemapController.navigateToPinpoint(WemapPinpointId: pinpoint.id)
     }
     
     @objc func onEventClose(_ wemapController: wemapsdk) {
@@ -176,8 +191,8 @@ extension ViewController: wemapsdkViewDelegate {
     }
 
     @objc func onMapMoved(_ wemapController: wemapsdk, mapMoved: MapMoved) {
-        print("Map Moved:")
-        printClassAttributes(mapMoved)
+//        print("Map Moved:")
+//        printClassAttributes(mapMoved)
     }
     
     @objc func onMapClick(_ wemapController: wemapsdk, coordinates: Coordinates) {
@@ -191,18 +206,26 @@ extension ViewController: wemapsdkViewDelegate {
     }
     
     @objc func onContentUpdated(_ wemapController: wemapsdk, events: [WemapEvent], contentUpdatedQuery: ContentUpdatedQuery) {
-        print("Content Updated (WemapEvent):")
-        printClassAttributes(contentUpdatedQuery)
+//        print("Content Updated (WemapEvent):")
+//        printClassAttributes(contentUpdatedQuery)
     }
     
     @objc func onContentUpdated(_ wemapController: wemapsdk, pinpoints: [WemapPinpoint], contentUpdatedQuery: ContentUpdatedQuery) {
-        print("Content Updated (WemapPinpoint):")
-        printClassAttributes(contentUpdatedQuery)
+//        print("Content Updated (WemapPinpoint):")
+//        printClassAttributes(contentUpdatedQuery)
     }
     
     @objc func onPolylineDrawn(_ wemapController: wemapsdk, id: String) {
         print("Polyline Drawn: \(id)")
         self.currentPolylineId = id
+    }
+    
+    @objc func onIndoorLevelChanged(_ wemapController: wemapsdk, data: [String: Any]) {
+        print("on indoor level changed: \(data)")
+    }
+    
+    @objc func onIndoorLevelsChanged(_ wemapController: wemapsdk, data: Array<Any>) {
+        print("on indoor levels changed: \(data)")
     }
 }
 

@@ -1,29 +1,22 @@
 PODS:
-  - livemap-ios-sdk (2.0.0):
-    - NAOSDK
-  - NAOSDK (4.11.7)
+  - livemap-ios-sdk (2.7.0)
 
 DEPENDENCIES:
-  - "livemap-ios-sdk (from `git@github.com:wemap/livemap-ios-sdk.git`, branch `develop`)"
-
-SPEC REPOS:
-  trunk:
-    - NAOSDK
+  - "livemap-ios-sdk (from `git@github.com:wemap/livemap-ios-sdk.git`, branch `master`)"
 
 EXTERNAL SOURCES:
   livemap-ios-sdk:
-    :branch: develop
+    :branch: master
     :git: "git@github.com:wemap/livemap-ios-sdk.git"
 
 CHECKOUT OPTIONS:
   livemap-ios-sdk:
-    :commit: 79192345ca53e3d5ac6854d24f676a373db1014f
+    :commit: d61ee2ac7a3843aa23b7998a7ed38a239d3a114e
     :git: "git@github.com:wemap/livemap-ios-sdk.git"
 
 SPEC CHECKSUMS:
-  livemap-ios-sdk: 434eed4f3b2af64a313089f99c394442604ff571
-  NAOSDK: df009f164d494e9246ca2e8e5539699d05b8b048
+  livemap-ios-sdk: a8a0414ceeca5e24b39a6c8b06c653b9de1e1e52
 
-PODFILE CHECKSUM: 7e9c424b58feff3e06817652a8fbb2a457f55d2b
+PODFILE CHECKSUM: f6978a1d97533320a859b371c4b7c65c02d18f39
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.14.3
